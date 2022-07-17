@@ -2,11 +2,8 @@ from archlinux:latest
 
 workdir /lib
 
-# Update to latest arch
-run pacman -Syu --noconfirm
-
 # Install required dependencies
-run pacman -S \
+run pacman -Syu \
     git \
     python-scipy \
     swig \
@@ -20,8 +17,6 @@ run pacman -S \
     log4cpp \
     base-devel \
     cmake \
-    wxgtk-common \
-    wxgtk2 \
     wxgtk3 \
     python-wxpython \
     libuhd-firmware \
